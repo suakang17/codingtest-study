@@ -73,11 +73,13 @@
 <br />
 
 ## ✅ 소스코드 업로드 시 커밋 컨벤션
-- commit 메세지: [주차] 문제번호 / 사용한 언어
+- commit 메세지: [주차] 문제번호 or 풀이한 문제수 / 사용한 언어
 - description: 문제 주소 (option)
 - 터미널에서 작성법: 
 ```
 git commit -m "[1주차] 8393 / python" -m "https://www.acmicpc.net/problem/8393"
+# 또는
+git commit -m "[1주차] 3문제 / python" -m "https://www.acmicpc.net/problem/8393"
 ```
 ---
 
