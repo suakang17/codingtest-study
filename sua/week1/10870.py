@@ -8,3 +8,10 @@ def pibo(n):
     return l[n]
 
 print(pibo(int(sys.stdin.readline())))
+
+def recursivpibo(n):
+    if n <= 1:
+        return n
+    return recursivpibo(n-1) + recursivpibo(n-2)
+
+print(recursivpibo(int(sys.stdin.readline())))
