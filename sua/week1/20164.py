@@ -30,3 +30,5 @@ n = sys.stdin.readline().rstrip() # 1 ≤ N ≤ 10^9 - 1
 res = []
 seq(n, cntodd(int(n)))
 print(min(res), max(res))
+
+# math.inf
