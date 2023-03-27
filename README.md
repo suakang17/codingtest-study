@@ -27,7 +27,6 @@
 
 ## ✅ 스터디 참여 인원
 - [**강수아**](https://github.com/suakang17) | 언어: Python
-- [**김동찬**](https://github.com/chan-0 ) | 언어: Python
 - [**문소연**](https://github.com/dotz0ver) | 언어: Python
 - [**양진기**](https://github.com/82User) | 언어: Java
 - [**이재훈**](https://github.com/abc5259) | 언어: Java
