@@ -1,5 +1,5 @@
 import sys
-ret = [] # 재귀함수를 이용하여 m개의 수열을 저장하기 위한 리스트
+ret = []  # 재귀함수를 이용하여 m개의 수열을 저장하기 위한 리스트
 
 n, m = map(int, sys.stdin.readline().split())
 
