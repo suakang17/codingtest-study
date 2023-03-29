@@ -27,10 +27,10 @@
 
 ## ✅ 스터디 참여 인원
 - [**강수아**](https://github.com/suakang17) | 언어: Python
-- [**김동찬**](https://github.com/chan-0 ) | 언어: Python
 - [**문소연**](https://github.com/dotz0ver) | 언어: Python
 - [**양진기**](https://github.com/82User) | 언어: Java
 - [**이재훈**](https://github.com/abc5259) | 언어: Java
+- [**전유림**](https://github.com/Jyurim) | 언어: Python 
 - [**최재익**](https://github.com/Choijake) | 언어: Java
 - [**최한준**](https://github.com/gkswns3708) | 언어: Python, C++
 <br />
@@ -43,13 +43,13 @@
 | 0 |  **개요** <br>3월 6일 18:30
 | 1 |  **재귀**  <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/54696) |
 | 2 |  **백트래킹** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/55025) |
-| 3 |  **동적 계획법** <br>
-| 4 |  **누적 합** <br>
+| 3 |  **동적 계획법** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/55027) |
+| 4 |  **이분 탐색** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/55927) |
 | 5 |  **그리디 알고리즘**
 | 6 |  **스택**
 | 7 |  **큐, 덱**
 | 8 |  **분할 정복** 
-| 9 | **이분 탐색**  |
+| 9 | **추가 예정**  |
 
 ---
 ## ✅ 깃허브 이용 방법
