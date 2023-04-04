@@ -1,4 +1,4 @@
-# pypy3로 통과 
+# pypy3로 통과 - 하한값 구하기
 import sys
 n, m = map(int, sys.stdin.readline().split())
 tree = list(map(int, sys.stdin.readline().split()))
@@ -16,3 +16,5 @@ while start <= end:
     else:
         end = mid - 1
 print(end)
+
+

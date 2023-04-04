@@ -1,5 +1,4 @@
 import sys
-
 k, n = map(int, sys.stdin.readline().split())
 l = [int(sys.stdin.readline()) for _ in range(k)]
 start, end = 1, max(l)

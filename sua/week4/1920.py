@@ -1,21 +1,46 @@
-from sys import stdin, stdout
-n = stdin.readline()
-N = sorted(map(int,stdin.readline().split()))
-m = stdin.readline()
-M = map(int, stdin.readline().split())
+# 재귀
+import sys
+n = int(sys.stdin.readline())
+a = sorted(list(map(int, sys.stdin.readline().split())))
+m = int(sys.stdin.readline())
+goals = list(map(int, sys.stdin.readline().split()))
 
-def binary(l, N, start, end):
+start = 0
+end = len(a) - 1
+
+
+def bs(arr, target, start, end):
     if start > end:
         return 0
-    m = (start+end)//2
-    if l == N[m]:
-        return 1
-    elif l < N[m]:
-        return binary(l, N, start, m-1)
-    else:
-        return binary(l, N, m+1, end)
 
-for l in M:
-    start = 0
-    end = len(N)-1
-    print(binary(l,N,start,end))
+    mid = int((start + end) //2)
+    if arr[mid] == target:
+        return 1
+
+    elif arr[mid] > target:
+        return bs(arr, target, start, mid - 1)
+
+    else:
+        return bs(arr, target, mid + 1, end)
+
+
+for i in goals:
+    if bs(a, i, start, end):
+        print(1)
+    else:
+        print(0)
+
+# 2 - 반복문
+def bs(arr, target, start, end):
+    while start <= end:
+        mid = (start + end) // 2
+
+        if arr[mid] == target:
+            return 1
+
+        elif arr[mid] > target:
+            end = mid - 1
+
+        else:
+            start = mid + 1
+    return 0
