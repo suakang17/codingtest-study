@@ -45,10 +45,13 @@
 | 0 |  **개요** <br>3월 6일 18:30
 | 1 |  **재귀**  <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/54696) |
 | 2 |  **백트래킹** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/55025) |
-| 3 |  **동적 계획법** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/55027) |
+| 3 |  **동적 계획법 1** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/55027) |
 | 4 |  **이분 탐색** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/55927) |
 | 5 |  **그래프 탐색** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/56306) |
-| 6 | **추가 예정**  |
+| 6 | **동적 계획법 2** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/56649) |
+| 7 | **우선순위 큐와 최단경로** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/56853)  |
+| 8 | **추가 예정**  |
+
 
 ---
 ## ✅ 깃허브 이용 방법
