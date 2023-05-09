@@ -11,7 +11,7 @@ for _ in range (m):
     graph[a][b] = min(graph[a][b], c)
 
 heap = []
-def floyd_warshall(start):
+def dijkstra(start):
     heapq.heappush(heap, (0, start))
     distance = [INF] * (n+1)
     distance[start] = 0
@@ -27,7 +27,7 @@ def floyd_warshall(start):
     return distance
 
 for i in range (1, n+1):
-    distance = floyd_warshall(i)
+    distance = dijkstra(i)
     for j in range (1, n+1):
         if distance[j] == INF:
             print(0, end = ' ')
