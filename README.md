@@ -50,7 +50,9 @@
 | 5 |  **그래프 탐색** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/56306) |
 | 6 | **동적 계획법 2** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/56649) |
 | 7 | **우선순위 큐와 최단경로** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/56853)  |
-| 8 | **추가 예정**  |
+| 8 | **투 포인터** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/57279)  |
+| 9 | **구현** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/57544)  |
+| 10 | **추가 예정**  |
 
 
 ---
