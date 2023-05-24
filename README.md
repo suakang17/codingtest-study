@@ -2,7 +2,7 @@
 # 코딩 테스트 스터디
 
 ## ✅ 스터디 개요
-#### 2023.03.06~ (한 학기)
+#### 2023.03.06 ~ 2023.05.30
 #### 매주 화요일 18:30 ~ 20:30
 ---
 ## ✅ [스터디 발표 자료 노션 링크](https://gkswns3708.notion.site/2d7ea7afde964bd6b20880b1ed420cfd)
@@ -52,8 +52,8 @@
 | 7 | **우선순위 큐와 최단경로** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/56853)  |
 | 8 | **투 포인터** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/57279)  |
 | 9 | **구현** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/57544)  |
-| 10 | **추가 예정**  |
-
+| 10 | **트리** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/57906)  |
+| 11 | **유니온파인드** <br>[문제집](https://www.acmicpc.net/group/workbook/view/17110/58008)  |
 
 ---
 ## ✅ 깃허브 이용 방법
