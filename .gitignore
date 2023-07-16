@@ -7,7 +7,10 @@
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
-sua/week11/2.py
+sua/python/boj/week11/2.py
+.idea/codingtest-study.iml
+.idea/modules.xml
+.idea/misc.xml
 
 # AWS User-specific
 .idea/**/aws.xml
