@@ -1,6 +1,6 @@
 package boj.io;
 
-class Main {
+class _2557 {
     public static void main(String[] args) {
         System.out.println("Hello World!");
     }
