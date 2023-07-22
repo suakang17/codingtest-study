@@ -1,12 +1,12 @@
 
 # 코딩 테스트 스터디
-| 종료되었지만 언제든지 참여 가능합니다.
+| 언제든지 참여 가능합니다.
 
 ## ✅ 스터디 개요
-#### 2023.03.06 ~ 2023.05.30
-#### 매주 화요일 18:30 ~ 20:30
+#### 1차: 2023.03.06 ~ 2023.05.30 | 매주 화요일 18:30 ~ 20:30
+#### 2차: 2023.07.29 ~
 ---
-## ✅ [스터디 발표 자료 노션 링크](https://gkswns3708.notion.site/2d7ea7afde964bd6b20880b1ed420cfd)
+## ✅ [1차 스터디 발표 자료 노션 링크](https://gkswns3708.notion.site/2d7ea7afde964bd6b20880b1ed420cfd)
 - 개인별 발표 자료, 공부한 내용이 담겨 있습니다. 
 
 ## ✅ 오프라인 스터디 진행 규칙
@@ -29,18 +29,23 @@
 ---
 
 ## ✅ 스터디 참여 인원
-- [**강수아**](https://github.com/suakang17) | 언어: Python
-- [**문소연**](https://github.com/dotz0ver) | 언어: Python
-- [**양진기**](https://github.com/82User) | 언어: Java
-- [**이재훈**](https://github.com/abc5259) | 언어: Java
-- [**전유림**](https://github.com/Jyurim) | 언어: Python 
-- [**최재익**](https://github.com/Choijake) | 언어: Java
-- [**최한준**](https://github.com/gkswns3708) | 언어: Python, C++
+- [**강수아**](https://github.com/suakang17) | 언어: Python, Java | 1차, 2차
+- [**문소연**](https://github.com/dotz0ver) | 언어: Python | 1차
+- [**양진기**](https://github.com/82User) | 언어: Java | 1차
+- [**이재훈**](https://github.com/abc5259) | 언어: Java | 1차
+- [**전유림**](https://github.com/Jyurim) | 언어: Python | 1차
+- [**최재익**](https://github.com/Choijake) | 언어: Java | 1차 
+- [**최한준**](https://github.com/gkswns3708) | 언어: Python, C++ | 1차
+- [**김현지**](https://github.com/hjjj99) | 언어: Java | 2차
+- [**이지우**](https://github.com/leeejw00) | 언어: Java | 2차
+- [**정소영**](https://github.com/so2043) | 언어: Java | 2차
+- [**최연준**](https://github.com/yeonjun21) | 언어: Java | 2차
+
 <br />
 
 ---
 
-## ✅ 주차별 커리큘럼
+## ✅ 1차 스터디 주차별 커리큘럼
 | 주차 | 주제 |
 |---|---|
 | 0 |  **개요** <br>3월 6일 18:30
