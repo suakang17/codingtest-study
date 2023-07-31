@@ -2,6 +2,7 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 sua/java/swea/½Ç½À
+.vscode/
 
 # User-specific stuff
 .idea/**/workspace.xml
