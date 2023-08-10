@@ -12,7 +12,7 @@ public class _2751 {
         
         int N = Integer.parseInt(br.readLine());
 
-        // 1 arrays.sort 1512ms 114508kb
+        // 1 arrays.sort 1512ms 114508kb -> 시간초과 가능성 -> wrapper 써서 Collections.sort() 쓰기
         // int[] nums = new int[N];
 
         // for(int i = 0; i < N; i++){
