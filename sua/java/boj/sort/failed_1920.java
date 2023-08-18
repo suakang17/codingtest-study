@@ -51,11 +51,11 @@ public class failed_1920 {
             }
             
             if(lo > hi) { System.out.println("0");}
-            // if(hi !=N && arr1[hi] == target || (N == 1 && arr1[0] == target)) { 
-            //     System.out.println("1");
-            // }else {
-            //     System.out.println("0");
-            // }
+            if(hi != N - 1 && arr1[hi] == target || (N == 1 && arr1[0] == target)) { 
+                System.out.println("1");
+            }else {
+                System.out.println("0");
+            }
         }
     }
 }

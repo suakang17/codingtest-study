@@ -23,20 +23,82 @@ public class _1216 {
                 }
             }
 
-            for(int i = 0; i < 100; i++) {
-                for(int j = 0; j < 100; j++) {
-                    arr[i][j]
-            }
-        }
+            for(int i = 100; i > 0; i--) {  // 임의의 회문 길이 i
+				if(solve(i)) {
+					System.out.println("#"+ t + " " + i);
+					break;
+				}	
+			}
         }
     }
 
-    private static boolean horizontal(int i, int j, int l) {
+    public static boolean solve(int l) {
+		for (int i = 0; i < 100; i++) {
+			for (int j = 0; j <= (100 - l); j++) {
+				if(horizontal(i, j, l) || vertical(j, i, l) ) return true;
+			}
+		}
+		
+		return false;
+	}
+
+    // private static boolean horizontal(int i, int j, int l) {
+    //     String tmp = "";
+	// 	int count = 0;
+		
+	// 	while(count < l) {
+	// 		tmp += arr[i][j+count];
+	// 		count++;
+	// 	}
+		
+	// 	// 문자열 뒤집기
+	// 	StringBuffer bf = new StringBuffer(tmp);
+	// 	String reverse = bf.reverse().toString();
+
+	// 	// 회문 여부 검사
+	// 	if(tmp.equals(reverse)) {
+	// 		return true;
+	// 	}
+		
+	// 	return false;
         
-        
+    // }
+
+    // private static boolean vertical(int i, int j, int l) {
+    //     String tmp = "";
+	// 	int count = 0;
+		
+	// 	while(count < l) {
+	// 		tmp += arr[i+count][j];
+	// 		count++;
+	// 	}
+		
+	// 	// 문자열 뒤집기
+	// 	StringBuffer bf = new StringBuffer(tmp);
+	// 	String reverse = bf.reverse().toString();
+
+	// 	// 회문 여부 검사
+	// 	if(tmp.equals(reverse)) {
+	// 		return true;
+	// 	}
+		
+	// 	return false;
+    // }
+
+    // 직접 매칭
+    // 가로 탐색
+    public static boolean horizontal(int i, int j, int l) {
+        for (int k = 0; k < l / 2; k++) {
+            if(arr[i][j + k] != arr[i][j + l - 1 - k]) return false;
+        }
+        return true;
     }
-
-    private static boolean vertical(int i, int j, int l) {
-
+    
+    // 세로 탐색
+    public static boolean vertical(int i, int j, int l) {
+        for (int k = 0; k < l / 2; k++) {
+            if(arr[i + k][j] != arr[i + l - 1 - k][j]) return false;
+        }
+        return true;
     }
 }
