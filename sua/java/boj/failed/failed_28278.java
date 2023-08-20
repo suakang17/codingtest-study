@@ -1,4 +1,4 @@
-package boj.data_structure;
+package boj.failed;
 
 import java.io.*;
 import java.util.*;

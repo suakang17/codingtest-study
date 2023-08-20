@@ -1,4 +1,4 @@
-package boj.im;
+package boj.sssw;
 
 import java.io.*;
 import java.util.*;
