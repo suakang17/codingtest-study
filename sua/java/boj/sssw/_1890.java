@@ -32,7 +32,7 @@ public class _1890 {
                 int jump = board[c][r];
                 if(jump == 0) { break; }
 
-                if(c+jump < N) dp[c+jump][c] += dp[c][r];
+                if(c+jump < N) dp[c+jump][r] += dp[c][r];
                 if(r+jump < N) dp[c][r+jump] += dp[c][r];
             }
         }

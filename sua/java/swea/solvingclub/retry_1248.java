@@ -3,7 +3,7 @@ package swea.solvingclub;
 import java.io.*;
 import java.util.*;
 
-public class _1248 {
+public class retry_1248 {
     
     static int T, V, E, a, b;
     static boolean[] visited;
