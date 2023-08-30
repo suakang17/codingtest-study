@@ -3,7 +3,7 @@ package swea.solvingclub;
 import java.io.*;
 import java.util.*;
 
-public class re_1223 {
+public class retry_1223 {
     
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 

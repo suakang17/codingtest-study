@@ -1,4 +1,4 @@
-package boj;
+package boj.sssw;
 
 import java.io.*;
 import java.util.*;
@@ -24,13 +24,13 @@ public class _1244 {
             int gender = Integer.parseInt(st.nextToken());
             int sNum = Integer.parseInt(st.nextToken());
 
-            if(gender == 1) { // ³²
+            if(gender == 1) { // ï¿½ï¿½
 				for(int j = 0; j < N; j++){ 
 					if((j + 1) % sNum == 0)
 						s[j] = s[j] == 0? 1: 0;
                 }
 			}
-			else {  // ¿©
+			else {  // ï¿½ï¿½
 				s[sNum - 1] = s[sNum - 1] == 0 ? 1 : 0;
 				for(int j = 1; j < N/2; j++) {
 					if(sNum - 1 + j >= N || sNum - 1 - j < 0)
