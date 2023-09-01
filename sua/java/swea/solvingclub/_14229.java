@@ -19,16 +19,15 @@ public class _14229 {
         }
 
         tmp = new int[A.length];
-        mergeSortTD(0, A.length-1);
+        mergeSort(0, A.length-1);
         System.out.println(A[500000]);
     }
 
-    // top-down
-    public static void mergeSortTD(int start, int end) {
+    public static void mergeSort(int start, int end) {
         if(start < end) {
             int mid = (start+end) / 2;
-            mergeSortTD(start, mid);
-            mergeSortTD(mid+1, end);
+            mergeSort(start, mid);
+            mergeSort(mid+1, end);
 
             int p = start;
             int q = mid + 1;
@@ -46,10 +45,5 @@ public class _14229 {
                 A[i] = tmp[i];
             }
         }
-    }
-
-    // bottom-up
-    public static void mergeSortBU() {
-
     }
 }
