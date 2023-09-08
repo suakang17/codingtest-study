@@ -5,10 +5,10 @@ import java.util.*;
 
 public class _12100 {
     
-    static int N, cnt;
+    static int N, answer;
     static int[][] arr;
 
-    // NESW
+    // NSWE
     static int[] dr = {-1, 0, 1, 0};
     static int[] dc = {0, 1, 0, -1};
 
@@ -27,90 +27,124 @@ public class _12100 {
             }
         }
 
-        dfs(arr, 0);
+        game(0);
+        System.out.println(answer);
     }
-
-    private static int getMax(int[][] board) {
-
-        int max = Integer.MIN_VALUE;
-        for(int r = 0; r < N; r++) {
-            for(int c = 0; c < N; c++) {
-                max = (max < board[r][c]) ? board[r][c] : max;
-            }
+    
+    public static void game(int count) {
+        if(count == 5) {
+            findMax();
+            return;
         }
-
-        return max;
-    }
-
-    private static void dfs(int[][] nextState, int cnt) {
-
-        if(cnt == 6) { getMax(nextState); return; }
-
-        for(int d = 0; d < 4; d++) {
-                
-            switch (d) {
-                case 0:  // N
-                    for(int c = 0; c < N; c++) {
-                        nextState[0][c] = verticalSum(c);
-                        for(int i = 1; i < N; i++) {
-                            nextState[i][c] = 0;
-                        }
-
-                        dfs(nextState, cnt++);
-                    }
-                    break;
-                    
-                case 1:  // E
-                    for(int r = 0; r < N; r++) {
-                        nextState[r][N-1] = horizontalSum(r);
-                        for(int i = 1; i < N; i++) {
-                            nextState[r][i] = 0;
-                        }
-
-                        dfs(nextState, cnt++);
-                    }
-                    break;
-
-                case 2:  // S
-                    for(int c = 0; c < N; c++) {
-                        nextState[N-1][c] = verticalSum(c);
-                        for(int i = 1; i < N; i++) {
-                            nextState[i][c] = 0;
-                        }
-
-                        dfs(nextState, cnt++);
-                    }
-                    break;
-
-                case 3:  // W
-                    for(int r = 0; r < N; r++) {
-                        nextState[r][0] = horizontalSum(r);
-                        for(int i = 1; i < N; i++) {
-                            nextState[r][i] = 0;
-                        }
-
-                        dfs(nextState, cnt++);
-                    }
-                    break;
-            }
-        }
-    }
-
-    private static int verticalSum(int c) {
+        int copy[][] = new int[N][N];
+        for(int i = 0; i < N; i++)
+            copy[i] = arr[i].clone();
         
-        int sum = 0;
-        for(int i = 0; i < N; i++) { 
-            sum += arr[i][c];
+        for(int i = 0; i < 4; i++) {
+            move(i);
+            game(count+1);
+            for(int a = 0; a < N; a++)
+                arr[a] = copy[a].clone();
         }
-        return sum;
     }
-
-    private static int horizontalSum(int r) {
-        int sum = 0;
-        for(int i = 0; i < N; i++) { 
-            sum += arr[r][i];
+    
+    public static void move(int dir) {
+        switch(dir) {
+            // N
+            case 0:
+                for(int i = 0; i < N; i++) {
+                    int idx = 0;  // 값 넣을 위치
+                    int block = 0;  // 최근 블록의 수 (!= 0)
+                    for(int j = 0; j < N; j++) {
+                        if(arr[j][i] != 0) {
+                            if(block == arr[j][i]) {
+                                arr[idx - 1][i] = block * 2;
+                                block = 0;
+                                arr[j][i] = 0;
+                            }
+                            else {
+                                block = arr[j][i];
+                                arr[j][i] = 0;
+                                arr[idx][i] = block;
+                                idx++;
+                            }
+                        }
+                    }
+                }
+                break;
+            // S
+            case 1:
+                for(int i = 0; i < N; i++) {
+                    int idx = N - 1;
+                    int block = 0;
+                    for(int j = N - 1; j >= 0; j--) {
+                        if(arr[j][i] != 0) {
+                            if(block == arr[j][i]) {
+                                arr[idx + 1][i] = block * 2;
+                                block = 0;
+                                arr[j][i] = 0;
+                            }
+                            else {
+                                block = arr[j][i];
+                                arr[j][i] = 0;
+                                arr[idx][i] = block;
+                                idx--;
+                            }
+                        }
+                    }
+                }
+                break;
+            // W
+            case 2:
+                for(int i = 0; i < N; i++) {
+                    int idx = 0;
+                    int block = 0;
+                    for(int j = 0; j < N; j++) {
+                        if(arr[i][j] != 0) {
+                            if(block == arr[i][j]) {
+                                arr[i][idx - 1] = block * 2;
+                                block = 0;
+                                arr[i][j] = 0;
+                            }
+                            else {
+                                block = arr[i][j];
+                                arr[i][j] = 0;
+                                arr[i][idx] = block;
+                                idx++;
+                            }
+                        }
+                    }
+                }
+                break;
+            // E
+            case 3:
+                for(int i = 0; i < N; i++) {
+                    int idx = N - 1;
+                    int block = 0;
+                    for(int j = N - 1; j >= 0; j--) {
+                        if(arr[i][j] != 0) {
+                            if(block == arr[i][j]) {
+                                arr[i][idx + 1] = block * 2;
+                                block = 0;
+                                arr[i][j] = 0;
+                            }
+                            else {
+                                block = arr[i][j];
+                                arr[i][j] = 0;
+                                arr[i][idx] = block;
+                                idx--;
+                            }
+                        }
+                    }
+                }
+                break;
         }
-        return sum;
+    }
+    
+    public static void findMax() {
+        for(int i = 0; i < N; i++)
+            for(int j = 0; j < N; j++)
+                answer = Math.max(answer, arr[i][j]);
     }
 }
 
@@ -122,6 +156,12 @@ public class _12100 {
 // 전체 판의 상태를 기억해야함 -> 매개변수 arr, cnt
 
 // 0 아닌 수 or 경계 만날때까지 방향 이동 -> 각 칸에 대해 완탐 -> 20*20*4  ok
-// 무조건 맨 끝으로 보내되 행, 열단위 총합으로
+// 무조건 맨 끝으로 보내되 행, 열단위 합 -> 총합 아닌 같은값 두개 연달아 만날때만
 
 // ** todo d에 대해 visited 처리하기 ** //
+// ** todo2 한 번의 이동에서 이미 합쳐진 블록은 또 합쳐질 수 없기 때문 !! ** //
+// 똑같은 수가 세 개가 있는 경우에는 이동하려고 하는 쪽의 칸이 먼저 합쳐짐 -> 가에 있을수록 먼저 -> 가에 따라 인덱스 크 vs. 작을수록 먼저 합쳐지게
+// 이동했는데 이전 판과 상태 동일시 return.
+
+// 이동할 방향 선택
+// 각 행 or 열 완탐하며 같은수 2개 이상 연달아 존재시 합치기
