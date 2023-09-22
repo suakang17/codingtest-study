@@ -1,4 +1,4 @@
-package boj.graph;
+package boj.failed;
 
 import java.io.*;
 import java.util.*;
