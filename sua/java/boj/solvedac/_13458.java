@@ -1,4 +1,4 @@
-package boj.sssw;
+package boj.solvedac;
 
 import java.io.*;
 import java.util.*;
