@@ -23,7 +23,7 @@ public class _1463 {
         
         if(dp[n] == null) {
             if(n % 6 == 0) {
-                dp[n] = Math.min(calc(n-1), Math.min(calc(n/3), calc(n/2))) + 1;
+                dp[n] = Math.min(Math.min(calc(n/3), calc(n/2)), calc(n-1)) + 1;
             } else if(n % 3 == 0) {
                 dp[n] = Math.min(calc(n/3), calc(n-1)) + 1;
             } else if(n % 2 == 0) {
@@ -52,26 +52,27 @@ public class _1463 {
 //         for (int i = 1; i <= x; i++)
 // 2
 //             dynamic(i);
+
 // import java.util.Scanner;
 // public class Main {
- 
+
 // 	static Integer[] dp;
- 
+
 // 	public static void main(String[] args) {
- 
+
 // 		Scanner in = new Scanner(System.in);
- 
+
 // 		int N = in.nextInt();
- 
+
 // 		dp = new Integer[N+1];
 // 		dp[0] = dp[1] = 0;
- 
+
 // 		System.out.print(recur(N));
- 
+
 // 	}
- 
+
 // 	static int recur(int N) {
- 
+
 // 		if (dp[N] == null) {
 // 			if (N % 6 == 0) {
 // 				dp[N] = Math.min(recur(N - 1), Math.min(recur(N / 3), recur(N / 2))) + 1;
@@ -84,5 +85,4 @@ public class _1463 {
 // 		}
 // 		return dp[N];
 // 	}
- 
 // }
